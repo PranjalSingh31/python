@@ -188,19 +188,52 @@ if ch== 0:
 
 #elif can be used in place of else if 
 
-ch= ord(input("Enter any character"))
-#ord function used to covert in ASCII code
-if  ch >= 65 and ch <=91:
-    print("your entered character is in upper case") 
-elif ch>=97 and ch<122:
-    print("your entered character is in lower case") 
-elif ch>=48 and ch<=57:
-    print("your entered character is in digit") 
-else:
-    print("your entered character is special symbol")
+# ch= ord(input("Enter any character"))
+# #ord function used to covert in ASCII code
+# if  ch >= 65 and ch <=91:
+#     print("your entered character is in upper case") 
+# elif ch>=97 and ch<122:
+#     print("your entered character is in lower case") 
+# elif ch>=48 and ch<=57:
+#     print("your entered character is in digit") 
+# else:
+#     print("your entered character is special symbol")
          
 ###########
 # for loop 
 #for(initialization;condition;inc/dec)
 for i in range(1,10,2): #i=1 #running on gap of 2 till 10 
     print(i)
+
+for i in range(1,11): #i=1 
+    print(i*2,'',i*3,'',i*4) 
+    print()
+
+for i in range(1,11):
+    print(i*11,'',i*12,'',i*13)
+
+a='shiwaleew'
+  #012345678
+for i in a: #i=9:w
+    if i=='w':
+        print(i)
+
+
+
+
+name='prashantjha'
+count_consonent=0
+count_vowel=0
+
+for i in name: 
+    if i== "a"or i== "e"or i== "i" or i== "o" or i=="u" :
+        count_vowel=count_vowel+1
+else:
+    count_consonent+=1
+print('count consonent=',count_consonent)
+print('count vowel=', count_vowel)
+
+for i,j in zip(range(1,6),range(5,0,-1) ):  # multiple range function can be taken in zip function
+    if i==3 and j==3:
+         continue
+    print (i,'',j) 
