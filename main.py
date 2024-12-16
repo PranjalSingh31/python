@@ -237,3 +237,26 @@ for i,j in zip(range(1,6),range(5,0,-1) ):  # multiple range function can be tak
     if i==3 and j==3:
          continue
     print (i,'',j) 
+
+p1=int(input("Enter paper1 marks"))  #45
+p2=int(input("Enter paper2 marks"))  #55
+p3=int(input("Enter paper3 marks"))  #77
+p4=int(input("Enter paper4 marks"))  #88
+p5=int(input("Enter paper5 marks"))  #65
+
+gender= input('Enter your gender')
+if p1 >=40 and p2>=40 and p3>=40 and p4>=40 and p5>=40:
+        print("you are pass")
+else:
+    print("you are fail")
+total = p1+p2+p3+p4+p5
+percentage = total/5.0
+print ("Total=",total)        
+print("percentage=",percentage)
+
+if(gender == 'male'and percentage>=60):
+    print("selected")
+if(gender == 'female'and percentage>=65):
+    print("selected")
+else:
+    print("Not selected")
