@@ -260,3 +260,4 @@ if(gender == 'female'and percentage>=65):
     print("selected")
 else:
     print("Not selected")
+    
